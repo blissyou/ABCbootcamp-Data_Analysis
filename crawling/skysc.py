@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore')
 date = []
 
 start = "20240801"
-last = "20250630"
+last = "20250331"
 
 start_date = datetime.strptime(start, "%Y%m%d")
 last_date = datetime.strptime(last, "%Y%m%d")
@@ -45,7 +45,7 @@ time_lists = []
 airport_lists = []
 price_lists = []
 
-# https://flight.naver.com/flights/international/SEL-FUK-20240713?adult=1&fareType=Y
+# https://flight.naver.com/flights/international/SEL-HKG-20240713?adult=1&fareType=Y
 current_month = None
 
 
@@ -57,7 +57,7 @@ def save_data():
 
 for i in date:
     print(f'{i}년도 추출 추출중...{5}초 대기 예정')
-    new_url = 'https://flight.naver.com/flights/international/SEL-TYO-' + i + '?adult=1&fareType=Y'
+    new_url = 'https://flight.naver.com/flights/international/SEL-HKG-' + i + '?adult=1&fareType=Y'
     print(new_url)
 
     try:
@@ -74,26 +74,22 @@ for i in date:
         soup = BeautifulSoup(html_source, 'html.parser')
         driver.execute_script('window.scrollTo(0, 800);')
 
-
-
-        times = driver.find_elements(By.CLASS_NAME, 'route_time__xWu7a')[:10]
-        airports = driver.find_elements(By.CLASS_NAME, 'airline_name__0Tw5w')[:10]
-        prices = driver.find_elements(By.CLASS_NAME, 'item_num__aKbk4')[:10]
-
+        times = driver.find_elements(By.CLASS_NAME, 'route_time__xWu7a')[:5]
+        airports = driver.find_elements(By.CLASS_NAME, 'airline_name__0Tw5w')[:5]
+        prices = driver.find_elements(By.CLASS_NAME, 'item_num__aKbk4')[:5]
 
         year_date = str(datetime.strptime(i, '%Y%m%d'))
 
-        for time_d in times:
-            time_lists.append(year_date + '-' + time_d.text)
-            print(time_d.text)
+        min_length = min(len(times), len(airports), len(prices))
 
-        for airport_d in airports:
-            airport_lists.append(airport_d.text)
-            print(airport_d.text)
+        for j in range(min_length):
+            time_lists.append(year_date + '-' + times[j].text)
+            airport_lists.append(airports[j].text)
+            price_lists.append(prices[j].text)
 
-        for price_d in prices:
-            price_lists.append(price_d.text)
-            print(price_d.text)
+            print(times[j].text)
+            print(airports[j].text)
+            print(prices[j].text)
 
     except Exception as e:
         print(e)
