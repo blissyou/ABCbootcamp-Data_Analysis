@@ -1,7 +1,7 @@
 import pandas as pd
 
 # CSV 파일 읽기
-df = pd.read_csv('../csvfiles/flight_data_None.csv', encoding='utf-8-sig')
+df = pd.read_csv('csvfiles/flight_data_None.csv', encoding='utf-8-sig')
 
 # 날짜시간 열에서 시간 부분을 제외하고 필요한 부분만 추출
 def clean_date_time(date_time_str):

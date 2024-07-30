@@ -1,3 +1,6 @@
 .DS_Store
 .idea/
 .venv/
+
+# data set
+data_files/
