@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0855f781-79e3-46d4-a558-ecee6baadfbd" name="변경" comment="crawling">
-      <change afterPath="$PROJECT_DIR$/crawling/gaecro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawling/skysc.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawling/skysc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,34 +55,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.csvspit.executor": "Run",
-    "Python.gae.executor": "Run",
-    "Python.gaecro.executor": "Run",
-    "Python.gaecro2.executor": "Run",
-    "Python.googleimage.executor": "Run",
-    "Python.look.executor": "Run",
-    "Python.meloncro.executor": "Run",
-    "Python.naverfly.executor": "Run",
-    "Python.skysc.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.tests.executor": "Run",
-    "Python.youtube.executor": "Run",
-    "Python.youtube_cro_package.executor": "Run",
-    "Python.youtubecro.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/choewonhyeong/Desktop/my_fucking_project/ABCbootcamp/croproject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.csvspit.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gae.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gaecro.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gaecro2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.googleimage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.look.executor&quot;: &quot;Run&quot;,
+    &quot;Python.meloncro.executor&quot;: &quot;Run&quot;,
+    &quot;Python.naverfly.executor&quot;: &quot;Run&quot;,
+    &quot;Python.skysc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.youtube.executor&quot;: &quot;Run&quot;,
+    &quot;Python.youtube_cro_package.executor&quot;: &quot;Run&quot;,
+    &quot;Python.youtubecro.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/choewonhyeong/Desktop/my_fucking_project/ABCbootcamp/croproject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -140,6 +140,9 @@
       <workItem from="1721966474245" duration="1041000" />
       <workItem from="1721982323465" duration="2712000" />
       <workItem from="1722083413465" duration="5002000" />
+      <workItem from="1722163919962" duration="559000" />
+      <workItem from="1722169421398" duration="3000" />
+      <workItem from="1722301189834" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="crawling">
       <option name="closed" value="true" />
